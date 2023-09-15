@@ -1,0 +1,21 @@
+{
+  "name": "screening",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:build": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css",
+    "tailwind:watch": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "airtable": "^0.12.2",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
