@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.context {
+  min-height: 12em;
+}
+
+.unanswered {
+  border: 1px solid #ff0000;
+}
+
+
+.hello {
+  color: #1eb8ff;
+}

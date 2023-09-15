@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUDIT Results</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../js/audit_results.js" defer></script>
+</head>
+<header class="px-5 lg:px-32 mb-12">
+  <img src="../imgs/pex-logo.webp" alt="PEx Logo">
+</header>
+<body>
+  <main class="px-5 lg:px-32 mb-12 lg:mb-24 flex flex-col justify-center items-center gap-12">
+    <h1 class="text-center text-xl lg;text-4xl font-bold mb-6 lg:mb-12">Alcohol Use Disorder Identification Disorder Results</h1>
+    <div class="results-container border border-gray-200 p-6 lg:p-12 shadow-lg rounded-lg flex justify-center items-center lg:w-2/3 mx-auto">
+      <div class="score flex flex-col justify-center items-center gap-6">
+        <p class="text-2xl lg:text-3xl text-center">Your AUDIT score is <span id="auditScoreDOM" class="font-bold"></span></p>
+        <p id="textResult" class="text-xl font-semibold text-center"></p>
+        <p id="nextAction" class="mt-4 text-xl text-center w-full lg:w-5/6"></p>
+      </div>
+    </div>
+
+    <form action="/audit" method="POST" class="border border-gray-200 shadow-lg rounded-lg w-full lg:w-2/3 mx-auto p-6 lg:p-12 flex flex-col gap-6">
+      <input type="text" name="hiddenAuditScore" id="hiddenAuditScore" class="hidden">
+      <h2 class="text-center font-semibold text-center text-2xl">Get in touch</h2>
+      <div class="input-row flex flex-col lg:flex-row lg:items-center items-stretch w-full gap-6  lg:gap-12">
+        <div class="input flex flex-col justify-center items-start gap-1 lg:w-1/2">
+          <label for="firstName" class="text-md font-medium">First name</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Kyle" class="border border-gray-200 p-2 rounded-md outline-lightblue w-full">
+        </div>
+        <div class="input flex flex-col justify-center items-start gap-1 lg:w-1/2">
+          <label for="lastName" class="text-md font-medium">Last name</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Howard" class="border border-gray-200 p-2 rounded-md outline-lightblue w-full">
+        </div>
+      </div>
+
+      <div class="input-row flex flex-col lg:flex-row lg:items-center items-stretch w-full gap-6  lg:gap-12">
+        <div class="input flex flex-col justify-center items-start gap-1 lg:w-1/2">
+          <label for="phoneNumber" class="text-md font-medium">Phone number</label>
+          <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="072 345 6789" class="border border-gray-200 p-2 rounded-md outline-lightblue w-full">
+        </div>
+        <div class="input flex flex-col justify-center items-start gap-1 lg:w-1/2">
+          <label for="emailAddress" class="text-md font-medium">Email address</label>
+          <input type="email" name="emailAddress" id="emailAddress" placeholder="k.howard@gmail.com" class="border border-gray-200 p-2 rounded-md outline-lightblue w-full">
+        </div>
+      </div>
+      
+      <div class="input flex flex-col justify-center items-start gap-1">
+        <label for="message" class="text-md font-medium">Message</label>
+      <textarea name="message" id="message" cols="10" rows="4" class="border border-gray-200 p-2 rounded-md outline-lightblue w-full"></textarea>
+      </div>
+      
+
+      <button type="submit" class="bg-lightblue text-[#fff] text-xl text-center rounded-lg py-2 px-4 mt-8 transition-all mx-auto w-full hover:bg-[#1eb8ff]">Submit</button>
+    </form>
+  </main>
+</body>
+</html>

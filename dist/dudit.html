@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drug Use Disorder Identification Test</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./js/dudit.js" defer></script>
+</head>
+<body>
+  <header class="px-5 lg:px-32">
+    <img src="./imgs/pex-logo.webp" alt="PEx Logo">
+  </header>
+
+  <main class="px-5 lg:px-32 mb-12 lg:mb-24">
+    <div class="border border-gray-200 q-container bg-[#fff] p-6 lg:p-12 shadow-xl rounded-xl flex flex-col items-start xs:gap-12 gap-5 mt-4 lg:mt-12">
+      <h2 class="text-xl lg:text-3xl font-semibold underline text-center lg:text-left">Drug Use Disorder Identification Test</h2>
+      <hr>
+      <!-- Question 1 -->
+      <div class="q1">
+        <p class="question font-semibold text-xl">1. How often do you use drugs other than alcohol?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2 ">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q1" id="d1-0" value="0" class="w-5 h-5">
+            <label for="d1-0" class="cursor-pointer text-xl">Never</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q1" id="d1-1" value="1" class="w-5 h-5">
+            <label for="d1-1" class="cursor-pointer text-xl">Once a month or less often</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q1" id="d1-2" value="2" class="w-5 h-5">
+            <label for="d1-2" class="cursor-pointer text-xl">2-4 times a month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q1" id="d1-3" value="3" class="w-5 h-5">
+            <label for="d1-3" class="cursor-pointer text-xl">2-3 times a week</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q1" id="d1-4" value="4" class="w-5 h-5">
+            <label for="d1-4" class="cursor-pointer text-xl">4 times a week or more</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 2 -->
+      <div class="q2">
+        <p class="question font-semibold text-xl">2. Do you use more than one type of drug on the same occasion?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q2" id="d2-0" value="0" class="w-5 h-5">
+            <label for="d2-0" class="cursor-pointer text-xl">Never</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q2" id="d2-1" value="1" class="w-5 h-5">
+            <label for="d2-1" class="cursor-pointer text-xl">Once a month or less often</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q2" id="d2-2" value="2" class="w-5 h-5">
+            <label for="d2-2" class="cursor-pointer text-xl">2-4 times a month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q2" id="d2-3" value="3" class="w-5 h-5">
+            <label for="d2-3" class="cursor-pointer text-xl">2-3 times a week</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q2" id="d2-4" value="4" class="w-5 h-5">
+            <label for="d2-4" class="cursor-pointer text-xl">4 times a week or more</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 3 -->
+      <div class="q3">
+        <p class="question font-semibold text-xl">3. How many times do you take drugs on a typical day when you use drugs?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q3" id="d3-0" value="0" class="w-5 h-5">
+            <label for="d3-0" class="cursor-pointer text-xl">0</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q3" id="d3-1" value="1" class="w-5 h-5">
+            <label for="d3-1" class="cursor-pointer text-xl">1-2</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q3" id="d3-2" value="2" class="w-5 h-5">
+            <label for="d3-2" class="cursor-pointer text-xl">3-4</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q3" id="d3-3" value="3" class="w-5 h-5">
+            <label for="d3-3" class="cursor-pointer text-xl">5-6</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q3" id="d3-4" value="4" class="w-5 h-5">
+            <label for="d3-4" class="cursor-pointer text-xl">7 or more</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 4 -->
+      <div class="q4">
+        <p class="question font-semibold text-xl">4. How often are you influenced heavily by drugs?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q4" id="d4-0" value="0" class="w-5 h-5">
+            <label for="d4-0" class="cursor-pointer text-xl">Never</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q4" id="d4-1" value="1" class="w-5 h-5">
+            <label for="d4-1" class="cursor-pointer text-xl">Less often than once a month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q4" id="d4-2" value="2" class="w-5 h-5">
+            <label for="d4-2" class="cursor-pointer text-xl">Every month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q4" id="d4-3" value="3" class="w-5 h-5">
+            <label for="d4-3" class="cursor-pointer text-xl">Every week</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q4" id="d4-4" value="4" class="w-5 h-5">
+            <label for="d4-4" class="cursor-pointer text-xl">Daily or almost everyday</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 5 -->
+      <div class="q5">
+        <p class="question font-semibold text-xl">5. Over the past year, have you felt that your longing for drugs was so strong that you could not resist it?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q5" id="d5-0" value="0" class="w-5 h-5">
+            <label for="d5-0" class="cursor-pointer text-xl">Never</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q5" id="d5-1" value="1" class="w-5 h-5">
+            <label for="d5-1" class="cursor-pointer text-xl">Less often than once a month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q5" id="d5-2" value="2" class="w-5 h-5">
+            <label for="d5-2" class="cursor-pointer text-xl">Every month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q5" id="d5-3" value="3" class="w-5 h-5">
+            <label for="d5-3" class="cursor-pointer text-xl">Every week</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q5" id="d5-4" value="4" class="w-5 h-5">
+            <label for="d5-4" class="cursor-pointer text-xl">Daily or almost everyday</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 6 -->
+      <div class="q6">
+        <p class="question font-semibold text-xl">6. Has it happened, over the past year, that you have not been able to stop taking drugs once you started?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q6" id="d6-0" value="0" class="w-5 h-5">
+            <label for="d6-0" class="cursor-pointer text-xl">Never</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q6" id="d6-1" value="1" class="w-5 h-5">
+            <label for="d6-1" class="cursor-pointer text-xl">Less often than once a month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q6" id="d6-2" value="2" class="w-5 h-5">
+            <label for="d6-2" class="cursor-pointer text-xl">Every month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q6" id="d6-3" value="3" class="w-5 h-5">
+            <label for="d6-3" class="cursor-pointer text-xl">Every week</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q6" id="d6-4" value="4" class="w-5 h-5">
+            <label for="d6-4" class="cursor-pointer text-xl">Daily or almost everyday</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 7 -->
+      <div class="q7">
+        <p class="question font-semibold text-xl">7. How often over the past year have you taken drugs and then neglected to do something you should have done?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q7" id="d7-0" value="0" class="w-5 h-5">
+            <label for="d7-0" class="cursor-pointer text-xl">Never</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q7" id="d7-1" value="1" class="w-5 h-5">
+            <label for="d7-1" class="cursor-pointer text-xl">Less often than once a month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q7" id="d7-2" value="2" class="w-5 h-5">
+            <label for="d7-2" class="cursor-pointer text-xl">Every month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q7" id="d7-3" value="3" class="w-5 h-5">
+            <label for="d7-3" class="cursor-pointer text-xl">Every week</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q7" id="d7-4" value="4" class="w-5 h-5">
+            <label for="d7-4" class="cursor-pointer text-xl">Daily or almost everyday</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 8 -->
+      <div class="q8">
+        <p class="question font-semibold text-xl">8. How often over the past year have you needed to take a drug the morning after heavy drug use the day before?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q8" id="d8-0" value="0" class="w-5 h-5">
+            <label for="d8-0" class="cursor-pointer text-xl">Never</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q8" id="d8-1" value="1" class="w-5 h-5">
+            <label for="d8-1" class="cursor-pointer text-xl">Less often than once a month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q8" id="d8-2" value="2" class="w-5 h-5">
+            <label for="d8-2" class="cursor-pointer text-xl">Every month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q8" id="d8-3" value="3" class="w-5 h-5">
+            <label for="d8-3" class="cursor-pointer text-xl">Every week</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q8" id="d8-4" value="4" class="w-5 h-5">
+            <label for="d8-4" class="cursor-pointer text-xl">Daily or almost everyday</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 9 -->
+      <div class="q9">
+        <p class="question font-semibold text-xl">9. How often over the past year have you felt guilty and had a bad conscience because you used drugs?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q9" id="d9-0" value="0" class="w-5 h-5">
+            <label for="d9-0" class="cursor-pointer text-xl">Never</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q9" id="d9-1" value="1" class="w-5 h-5">
+            <label for="d9-1" class="cursor-pointer text-xl">Less often than once a month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q9" id="d9-2" value="2" class="w-5 h-5">
+            <label for="d9-2" class="cursor-pointer text-xl">Every month</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q9" id="d9-3" value="3" class="w-5 h-5">
+            <label for="d9-3" class="cursor-pointer text-xl">Every week</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q9" id="d9-4" value="4" class="w-5 h-5">
+            <label for="d9-4" class="cursor-pointer text-xl">Daily or almost everyday</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 10 -->
+      <div class="q10">
+        <p class="question font-semibold text-xl">10. Have you or anyone else been hurt (mentally or physically) because you used drugs?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q10" id="d10-0" value="0" class="w-5 h-5">
+            <label for="d10-0" class="cursor-pointer text-xl">No</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q10" id="d10-2" value="2" class="w-5 h-5">
+            <label for="d10-2" class="cursor-pointer text-xl">Yes, but not over the past year</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q10" id="d10-4" value="4" class="w-5 h-5">
+            <label for="d10-4" class="cursor-pointer text-xl">Yes, over the past year</label>
+          </div>
+        </div>
+      </div>
+      <!-- Question 11 -->
+      <div class="q11">
+        <p class="question font-semibold text-xl">11. Has a relative or a friend, a doctor or a nurse, or anyone else, been worried about your drug use or said to you that you should stop using drugs?</p>
+        
+        <div class="selections ml-2 md:ml-5 flex flex-col gap-1 lg:gap-2">
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q11" id="d11-0" value="0" class="w-5 h-5">
+            <label for="d11-0" class="cursor-pointer text-xl">No</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q11" id="d11-2" value="2" class="w-5 h-5">
+            <label for="d11-2" class="cursor-pointer text-xl">Yes, but not over the past year</label>
+          </div>
+          <div class="input flex items-center gap-2">
+            <input type="radio" name="q11" id="d11-4" value="4" class="w-5 h-5">
+            <label for="d11-4" class="cursor-pointer text-xl">Yes, over the past year</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="validationMessage" class="text-[#ff0000] font-bold text-center hidden">Please answer all the questions</div>
+
+      <div class="btns flex md:flex-row flex-col justify-center items-stretch md:justify-between w-full mt-8 w-full gap-4">
+        <button id="duditScoreBtn" class="w-full md:w-1/3 lg:w-1/3 bg-lightblue border border-lightblue rounded-lg md: py-1 py-2 px-4 mt-8 transition-all hover:bg-[#1eb8ff] hover:border-[#1eb8ff]">
+          <a href="javascript:void(0);" id="duditScoreBtnText" class="text-[#FFF] text-center">Get DUDIT score</a>
+        </button>
+       
+        <button id="goToAudit" class="bg-[#FFF] transition-all lg:w-1/4 py-2 px-4 mt-8">
+          <a href="javascript:void(0);" class=" text-lightblue text-center hover:text-[#1eb8ff]">Proceed to AUDIT</a>
+        </button>
+        
+      </div>
+    </div>
+  </main>
+  
+  </main>
+</body>
+</html>
