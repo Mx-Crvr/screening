@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // DUDIT
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './dist/index.html'))
+  res.sendFile(path.join(__dirname, '../dist/index.html'))
 });
 
 app.post('/dudit', (req, res) => {
@@ -37,7 +37,7 @@ app.post('/dudit', (req, res) => {
     });
   });
 
-  res.sendFile(path.join(__dirname, '/dist/success.html'))
+  res.sendFile(path.join(__dirname, '../dist/success.html'))
 });
 
 
@@ -62,7 +62,7 @@ app.post('/audit', (req, res) => {
       console.log(record.getId());
     });
   });
-  res.sendFile(path.join(__dirname, '/dist/success.html'))
+  res.sendFile(path.join(__dirname, '../dist/success.html'))
 });
 
 app.post('/combined', (req, res) => {
@@ -86,7 +86,7 @@ app.post('/combined', (req, res) => {
       console.log(record.getId());
     });
   });
-  res.sendFile(path.join(__dirname, '/dist/success.html'))
+  res.sendFile(path.join(__dirname, '../dist/success.html'))
 })
 
 app.listen(process.env.PORT)
