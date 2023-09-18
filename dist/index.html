@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alcohol & Drug Screening</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./imgs/pex-logo.webp" type="image/x-icon">
 </head>
 <body>
   <header class="px-5 lg:px-32">
@@ -12,7 +13,7 @@
   </header>
 
   <main class="px-5 lg:px-32 mb-12 lg:mb-24">
-    <div class="section py-5 lg:py-12 text-lg flex flex-col gap-12">
+    <div class="section py-5 lg:py-12 text-lg flex flex-col gap-24">
       <h1 class="text-xl lg:text-3xl font-bold text-center">Screening tools for alcohol & substance dependence</h1>
       <div class="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-24">
         <div class="flex flex-col items-stretch justify-center lg:gap-12">
@@ -22,18 +23,27 @@
         <img src="./imgs/consult.webp" alt="Consult" class="rounded-xl shadow-lg w-full lg:w-1/2">
         </div>
 
-        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
-          <div class="box border border-gray-300 p-5 rounded-lg shadow-lg flex flex-col gap-8">
-            <h3 class="font-semibold">Drug Use Disorder Identification Test</h3>
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-6 w-full">
+          <a href="./dudit.html"  class="box border border-gray-300 p-5 rounded-lg shadow-lg flex flex-col gap-8 w-full lg:w-1/2 cursor-pointer hover:shadow-xl">
+            <div class="flex flex-row items-center justify-between">
+              <h3 class="font-semibold">Drug Use Disorder Identification Test</h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            
             <p>The DUDIT assessment is divided into three sections, each targeting different aspects of drug use. The questions inquire about the frequency of drug use, inability to stop drug use, interference with responsibilities, withdrawal symptoms, engagement in risky situations due to drug use, and more. Each question is assigned a point value based on the response, with higher scores indicating a higher likelihood of a drug use disorder</p></p>
-            <a href="./dudit.html" class="bg-lightblue border border-lightblue text-[#FFF] text-center rounded-lg py-2 hover:bg-[#FFF] hover:text-lightblue transition-all">Take the test</a>
-          </div>
-
-          <div class="box border border-gray-300 p-5 rounded-lg shadow-lg flex flex-col gap-8">
-            <h3 class="font-semibold">Alcohol Use Disorder Identification Test</h3>
+          </a>
+          
+          <a href="./audit.html" class="box border border-gray-300 p-5 rounded-lg shadow-lg flex flex-col gap-8 w-full lg:w-1/2 cursor-pointer hover:shadow-xl">
+            <div class="flex flex-row items-center justify-between">
+              <h3 class="font-semibold">Alcohol Use Disorder Identification Test</h3>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
             <p>The AUDIT is divided into two sections. The first section addresses alcohol consumption patterns, including the frequency of drinking and the quantity consumed per occasion. The second section explores alcohol-related problems, such as inability to control drinking, interference with daily responsibilities, and the need for alcohol consumption in the morning to relieve withdrawal symptoms</p></p>
-            <a href="./audit.html" class="bg-lightblue border border-lightblue text-[#FFF] text-center rounded-lg py-2 hover:bg-[#FFF] hover:text-lightblue transition-all">Take the test</a>
-          </div>
+          </a>
         </div>
     </div>
 
