@@ -14,3 +14,10 @@
 .hello {
   color: #1eb8ff;
 }
+
+.box {
+  transition: all 0.2s ease-in-out;
+}
+.box:hover {
+  transform: scale(1.05);
+}
