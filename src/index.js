@@ -8,7 +8,7 @@ var base = new Airtable({apiKey: `${process.env.TOKEN}`}).base('apptL7CLejGyehMA
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static(path.join(__dirname, '../dist')));
 
 // DUDIT
 app.get('/', (req, res) => {

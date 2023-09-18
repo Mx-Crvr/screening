@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tailwind:build": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css",
-    "tailwind:watch": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+    "tailwind:watch": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --watch",
+    "start": "node src/index.js"
   },
   "author": "",
   "license": "ISC",
