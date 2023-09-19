@@ -2,8 +2,10 @@
 module.exports = {
   content: [
     "./index.html", 
-    "./dist/*.html",
-    "./dist/result_pages/dudit_results.html"],
+    "./dist/result_pages/dudit_results.html",
+    "./dist/result_pages/audit_results.html",
+    "./dist/result_pages/results.html",
+  ],
   theme: {
     screens: {
       xs: '320px',
