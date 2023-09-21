@@ -5,7 +5,7 @@ const duditScore = params.get("duditScore")
 const textResult = document.getElementById('textResult');
 const nextAction = document.getElementById('nextAction');
 
-if (duditScore === 0) {
+if (duditScore == 0) {
   textResult.textContent = 'Based on this DUDIT score, there does not seem to be any substance dependence.';
   nextAction.textContent = `Well done! If you know anyone that is struggling with a substance dependence, send them our way! Fill out the form below and we'll get in touch.`;
   textResult.style.color = 'green';
