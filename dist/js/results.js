@@ -22,7 +22,7 @@ function getAuditScore() {
     textResultAudit.style.color = 'orange';
   } else if (auditScore >= 20 && auditScore <= 40) {
     textResultAudit.textContent = 'Based on this AUDIT score, there seems to be a highrisk of alcohol dependence.';
-    nextActionAudit.textContent = `Immediate action is needed. We reccomend filling out the form below to book a comprehsnive screening assessment with one our coaches. <br> You can also call us on +27 82 692 3999. We also suggest visiting our <a href="https://www.projectexodus.net/groups" target="_blank" class="link">groups page</a> to attend a recovery group as soon as possible`;
+    nextActionAudit.innerHTML = `Immediate action is needed. We reccomend filling out the form below to book a comprehsnive screening assessment with one our coaches. <br> You can also call us on +27 82 692 3999. We also suggest visiting our <a href="https://www.projectexodus.net/groups" target="_blank" class="link">groups page</a> to attend a recovery group as soon as possible`;
     textResultAudit.style.color = 'red';
   }
 
