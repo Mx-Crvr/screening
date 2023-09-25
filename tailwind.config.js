@@ -14,6 +14,9 @@ module.exports = {
       xl: '1280px',
     },
     extend: {
+      fontFamily: {
+        jakarta: ['Plus Jakarta Sans', 'sans-serif']
+      },
       colors: {
         lightblue: "#1e90ff",
       }
