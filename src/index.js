@@ -1,8 +1,9 @@
 const express = require('express');
-const app = express();
 require('dotenv').config()
+const app = express();
+const PORT = process.env.PORT;
+console.log(process.env.TOKEN)
 const path = require('path');
-
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: `${process.env.TOKEN}`}).base('apptL7CLejGyehMAI');
 
@@ -16,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/dudit', (req, res) => {
-  base('Log').create([
+  base('AUDIT/DUDIT').create([
     {
       "fields": {
         "First name": req.body.firstName,
@@ -89,4 +90,4 @@ app.post('/combined', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/success.html'))
 })
 
-app.listen(process.env.PORT)
+app.listen((PORT), console.log('Sever listening on port:', PORT)) 
