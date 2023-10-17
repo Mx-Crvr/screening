@@ -90,4 +90,4 @@ app.post('/combined', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist/success.html'))
 })
 
-app.listen((PORT), console.log('Sever listening on port:', PORT)) 
+app.listen(PORT) 
